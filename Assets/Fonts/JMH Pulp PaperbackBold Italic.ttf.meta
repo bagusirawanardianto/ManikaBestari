@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 4a43ab0d67f9be041a67dc28c62d5920
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: JMH Pulp Paperback
+  fontNames:
+  - JMH Pulp Paperback
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 14b9ae258f061b24486b220da421fd48, type: 3}
+  - {fileID: 12800000, guid: 36756c5e94df85f459befcfc8edc4a03, type: 3}
+  - {fileID: 12800000, guid: 1e5864be19a3c9a4e9175fadd846fe59, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
