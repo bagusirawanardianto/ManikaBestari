@@ -41,7 +41,7 @@ public class ScoutBoy : MonoBehaviour
             if (transform.position.x >= batas2.position.x && isFacingRight)
                 Flip();
             else if (transform.position.x <= batas1.position.x && !isFacingRight)
-                Flip();
+               Flip();
 
         }
     }
@@ -104,7 +104,7 @@ public class ScoutBoy : MonoBehaviour
         transform.position = pos;
         if (!isFacingRight)
         {
-            Flip();
+            //Flip();
         }
     }
     void MoveLeft()
@@ -114,12 +114,12 @@ public class ScoutBoy : MonoBehaviour
         transform.position = pos;
         if (isFacingRight)
         {
-            Flip();
+            //Flip();
         }
     }
     void Flip()
     {
-        Vector3 theScale = transform.localScale = new Vector3(0.5f, 0.5f, 1f);
+        Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
         isFacingRight = !isFacingRight;
