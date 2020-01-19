@@ -1,0 +1,337 @@
+fileFormatVersion: 2
+guid: 7530afdcdccd65044a0068864a810693
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7201567393133188950
+    second: kisspng-bird-beak-parrot-animation-royalty-free-parrot-gamedev-market-5bd2bf37309664.420951851540538167199
+      (1)_0
+  - first:
+      213: -7585133330976837823
+    second: kisspng-bird-beak-parrot-animation-royalty-free-parrot-gamedev-market-5bd2bf37309664.420951851540538167199
+      (1)_1
+  - first:
+      213: -8328741066773007677
+    second: kisspng-bird-beak-parrot-animation-royalty-free-parrot-gamedev-market-5bd2bf37309664.420951851540538167199
+      (1)_2
+  - first:
+      213: 3420188300390684593
+    second: kisspng-bird-beak-parrot-animation-royalty-free-parrot-gamedev-market-5bd2bf37309664.420951851540538167199
+      (1)_3
+  - first:
+      213: -1653310798393481640
+    second: kisspng-bird-beak-parrot-animation-royalty-free-parrot-gamedev-market-5bd2bf37309664.420951851540538167199
+      (1)_4
+  - first:
+      213: 4477468486554950934
+    second: kisspng-bird-beak-parrot-animation-royalty-free-parrot-gamedev-market-5bd2bf37309664.420951851540538167199
+      (1)_5
+  - first:
+      213: 8488741495226810142
+    second: kisspng-bird-beak-parrot-animation-royalty-free-parrot-gamedev-market-5bd2bf37309664.420951851540538167199
+      (1)_6
+  - first:
+      213: -2936377497791519858
+    second: kisspng-bird-beak-parrot-animation-royalty-free-parrot-gamedev-market-5bd2bf37309664.420951851540538167199
+      (1)_7
+  - first:
+      213: -6876145805020461526
+    second: kisspng-bird-beak-parrot-animation-royalty-free-parrot-gamedev-market-5bd2bf37309664.420951851540538167199
+      (1)_8
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: kisspng-bird-beak-parrot-animation-royalty-free-parrot-gamedev-market-5bd2bf37309664.420951851540538167199
+        (1)_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 752
+        width: 293
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969d399ed08ed304db6f7271951b5eb6
+      internalID: 7201567393133188950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bird-beak-parrot-animation-royalty-free-parrot-gamedev-market-5bd2bf37309664.420951851540538167199
+        (1)_1
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 751
+        width: 281
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac62f4561685d1439500e168f99b0b0
+      internalID: -7585133330976837823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bird-beak-parrot-animation-royalty-free-parrot-gamedev-market-5bd2bf37309664.420951851540538167199
+        (1)_2
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 770
+        width: 296
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ef1d7f82ae2554b9d6683cdf8d148c
+      internalID: -8328741066773007677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bird-beak-parrot-animation-royalty-free-parrot-gamedev-market-5bd2bf37309664.420951851540538167199
+        (1)_3
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 485
+        width: 321
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e7c1bf2863cca0478fc017424d6a929
+      internalID: 3420188300390684593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bird-beak-parrot-animation-royalty-free-parrot-gamedev-market-5bd2bf37309664.420951851540538167199
+        (1)_4
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 456
+        width: 319
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0af99cbc7157534581724dbce3e92dd
+      internalID: -1653310798393481640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bird-beak-parrot-animation-royalty-free-parrot-gamedev-market-5bd2bf37309664.420951851540538167199
+        (1)_5
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 438
+        width: 319
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0cec5c4c75f1be4581bbc3476eff60f
+      internalID: 4477468486554950934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bird-beak-parrot-animation-royalty-free-parrot-gamedev-market-5bd2bf37309664.420951851540538167199
+        (1)_6
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 99
+        width: 288
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22226e89cbb6a0c4a96447fc0050c6cc
+      internalID: 8488741495226810142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bird-beak-parrot-animation-royalty-free-parrot-gamedev-market-5bd2bf37309664.420951851540538167199
+        (1)_7
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 121
+        width: 280
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0303c640b613f47b233c57f64ba7ae
+      internalID: -2936377497791519858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bird-beak-parrot-animation-royalty-free-parrot-gamedev-market-5bd2bf37309664.420951851540538167199
+        (1)_8
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 106
+        width: 283
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84653bf6094db0e4f9e00e80c39b911b
+      internalID: -6876145805020461526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

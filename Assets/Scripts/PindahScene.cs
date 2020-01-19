@@ -27,18 +27,23 @@ public class PindahScene : MonoBehaviour
             }
             else
             {
-                KembaliKeMenu();
+                SettingPermainan();
             }
         }
     }
 
     public void MulaiPermainan()
     {
-        SceneManager.LoadScene("Level_1");
+        SceneManager.LoadScene("Chapter_1");
     }
 
-    public void KembaliKeMenu()
+    public void SettingPermainan()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("Setting");
+    }
+
+    public void AudioSetting()
+    {
+        SceneManager.LoadScene("Audio");
     }
 }
