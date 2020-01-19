@@ -7,7 +7,7 @@ public class gameplay : MonoBehaviour {
 	//public string[] soal;
 	public string[] jawaban;
 
-	public Text text_soal, text_skor;
+	public Text text_skor;
 	public InputField input_jawaban;
     public Sprite[] soal;
 
@@ -18,14 +18,13 @@ public class gameplay : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		buka_soal ();
-        
     }
 
 	void buka_soal(){
 		nomor_soal++;
 		//text_soal.text = soal [nomor_soal];
-        //int index = Random.Range(0, sprites.Length);
-        gameObject.GetComponent<SpriteRenderer>().sprite = soal[nomor_soal];
+        //int index = Random.Range(0, soal.Length);
+        gameObject.GetComponent<SpriteRenderer>().sprite = soal [nomor_soal];
     }
 
 	public void jawab(){
