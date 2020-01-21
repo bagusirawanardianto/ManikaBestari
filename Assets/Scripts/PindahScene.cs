@@ -27,7 +27,7 @@ public class PindahScene : MonoBehaviour
             }
             else
             {
-                SettingPermainan();
+                ChapterPermainan();
             }
         }
     }
@@ -45,5 +45,10 @@ public class PindahScene : MonoBehaviour
     public void AudioSetting()
     {
         SceneManager.LoadScene("Audio");
+    }
+
+    public void ChapterPermainan()
+    {
+        SceneManager.LoadScene("Unlock Chapter");
     }
 }
