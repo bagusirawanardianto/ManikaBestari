@@ -7,11 +7,11 @@ public class gameplay : MonoBehaviour {
 	//public string[] soal;
 	public string[] jawaban;
 
-	public Text text_skor;
+	public Text  text_skor;
 	public InputField input_jawaban;
     public Sprite[] soal;
 
-    public GameObject feed_benar, feed_salah, selesai;
+    public GameObject text_soal, feed_benar, feed_salah, selesai;
 
 	int nomor_soal = -1, skor = 0;
 
@@ -24,7 +24,7 @@ public class gameplay : MonoBehaviour {
 		nomor_soal++;
 		//text_soal.text = soal [nomor_soal];
         //int index = Random.Range(0, soal.Length);
-        gameObject.GetComponent<SpriteRenderer>().sprite = soal [nomor_soal];
+        text_soal.GetComponent<SpriteRenderer>().sprite = soal [nomor_soal];
     }
 
 	public void jawab(){
