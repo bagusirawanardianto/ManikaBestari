@@ -39,4 +39,9 @@ public class PindahScene2 : MonoBehaviour
     {
         SceneManager.LoadScene("Audio");
     }
+
+    public void MulaiPermainan()
+    {
+        SceneManager.LoadScene("Chapter_1");
+    }
 }
