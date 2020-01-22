@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class PlayAudio : MonoBehaviour
+public class SettingAudioScreen : MonoBehaviour
 {
-    //public slider[] volumeSlider;
+    public AudioMixer audioMixer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,15 +21,13 @@ public class PlayAudio : MonoBehaviour
         
     }
 
-    public void SetMasterVolume(float value){
-
+    public void SetVolume (float volume)
+    {
+        audioMixer.SetFloat("volume", volume);
     }
 
-    public void SetMusicVolume(float value){
-
-    }
-
-    public void SetSfxVolume(float value){
-
+    public void Mute()
+    {
+        AudioListener.pause = !AudioListener.pause;
     }
 }
