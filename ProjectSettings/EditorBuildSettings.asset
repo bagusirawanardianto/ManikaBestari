@@ -35,4 +35,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Congratulations.unity
     guid: 0d7685a8548ee6c4089b380ccfd7240b
+  - enabled: 1
+    path: Assets/Scenes/Unlock Chapter.unity
+    guid: ad3742573d1bc694c9a16a8eb651d81d
+  - enabled: 1
+    path: Assets/Scenes/Resolution.unity
+    guid: b0add8a63ee162741a26977ad90d9e9b
   m_configObjects: {}
