@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,9 +9,12 @@ public class LadyController : MonoBehaviour
     bool isJump = true;
     bool isDead = false;
     bool isSuperJump = false;
+    bool isProlog = false;
 
     int idMove = 0;
     int superJump = 0;
+
+    int countProlog = 5;
 
     Animator anim;
 
@@ -27,6 +31,21 @@ public class LadyController : MonoBehaviour
     private AudioSource MPPeluruItems;
 
     public Rigidbody2D rbd;
+
+    public GameObject p1, p2, p3, p4, p5, b1;
+
+    public static GameManager GM;
+
+    public KeyCode jump { get; set; }
+    public KeyCode forward { get; set; }
+    public KeyCode backward { get; set; }
+
+    void Awake()
+    {
+        jump = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("jumpKey", "Space"));
+        forward = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("forwardKey", "W"));
+        backward = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("backwardKey", "S"));
+    }
 
     // Use this for initialization
     private void Start()
@@ -49,30 +68,33 @@ public class LadyController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        //Debug.Log("Jump "+isJump);
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            MoveLeft();
-        }
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            MoveRight();
-        }
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Jump();
-        }
-        if (Input.GetKeyUp(KeyCode.RightArrow))
-        {
-            Idle();
-        }
-        if (Input.GetKeyUp(KeyCode.LeftArrow))
-        {
-            Idle();
-        }
-        Move();
-        Dead();
+    {  
+            if (Input.GetKeyDown(backward))
+            {
+                MoveLeft();
+            }
+            if (Input.GetKeyDown(forward))
+            {
+                MoveRight();
+            }
+            if (Input.GetKeyDown(jump))
+            {
+                Jump();
+            }
+            if (Input.GetKeyUp(forward))
+            {
+                Idle();
+            }
+            if (Input.GetKeyUp(backward))
+            {
+                Idle();
+            }
+            Move();
+            Dead();
+
+        jump = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("jumpKey", "Space"));
+        forward = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("forwardKey", "W"));
+        backward = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("backwardKey", "S"));
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -108,20 +130,20 @@ public class LadyController : MonoBehaviour
 
     private void Move()
     {
-        if (idMove == 1 && !isDead)
-        {
-            // Kondisi ketika bergerak ke kekanan
-            if (!isJump) anim.SetTrigger("run");
-            transform.Translate(1 * Time.deltaTime * 5f, 0, 0);
-            transform.localScale = new Vector3(0.8f, 0.7f, 1f);
-        }
-        if (idMove == 2 && !isDead)
-        {
-            // Kondisi ketika bergerak ke kiri
-            if (!isJump) anim.SetTrigger("run");
-            transform.Translate(-1 * Time.deltaTime * 5f, 0, 0);
-            transform.localScale = new Vector3(-0.8f, 0.7f, 1f);
-        }
+            if (idMove == 1 && !isDead)
+            {
+                // Kondisi ketika bergerak ke kekanan
+                if (!isJump) anim.SetTrigger("run");
+                transform.Translate(1 * Time.deltaTime * 5f, 0, 0);
+                transform.localScale = new Vector3(0.8f, 0.7f, 1f);
+            }
+            if (idMove == 2 && !isDead)
+            {
+                // Kondisi ketika bergerak ke kiri
+                if (!isJump) anim.SetTrigger("run");
+                transform.Translate(-1 * Time.deltaTime * 5f, 0, 0);
+                transform.localScale = new Vector3(-0.8f, 0.7f, 1f);
+            }
     }
 
     public void Jump()
@@ -196,6 +218,35 @@ public class LadyController : MonoBehaviour
             isSuperJump = true;
             superJump = 0;
             MPUseItems.Play();
+        }
+    }
+
+    public void nextProlog()
+    {
+        countProlog--;
+
+        if(countProlog == 4)
+        {
+            p1.SetActive(false);
+        }
+        else if(countProlog == 3)
+        {
+            p2.SetActive(false);
+        }
+        else if (countProlog == 2)
+        {
+            p3.SetActive(false);
+        }
+        else if (countProlog == 1)
+        {
+            p4.SetActive(false);
+        }
+        else if (countProlog == 0)
+        {
+            p5.SetActive(false);
+            b1.SetActive(false);
+
+            isProlog = true;
         }
     }
 
