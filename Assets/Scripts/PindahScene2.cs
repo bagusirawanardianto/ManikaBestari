@@ -42,7 +42,7 @@ public class PindahScene2 : MonoBehaviour
 
     public void MulaiPermainan()
     {
-        SceneManager.LoadScene("Chapter_1");
+        SceneManager.LoadScene("Intro");
     }
 
         public void KembaliKeMenu()

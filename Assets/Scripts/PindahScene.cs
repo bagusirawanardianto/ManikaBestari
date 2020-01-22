@@ -34,7 +34,7 @@ public class PindahScene : MonoBehaviour
 
     public void MulaiPermainan()
     {
-        SceneManager.LoadScene("Chapter_1");
+        SceneManager.LoadScene("Intro");
     }
 
     public void SettingPermainan()
@@ -60,5 +60,10 @@ public class PindahScene : MonoBehaviour
      public void ResolutionSetting()
     {
         SceneManager.LoadScene("Resolution");
+    }
+
+    public void Keluar()
+    {
+        Application.Quit();
     }
 }
