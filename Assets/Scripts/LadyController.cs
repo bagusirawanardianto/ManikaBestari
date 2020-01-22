@@ -225,9 +225,21 @@ public class LadyController : MonoBehaviour
     IEnumerator ExampleCoroutine()
     {
         for(int i = 0; i < Items.Length; i++){
-            Items[i].active = true;
-            yield return new WaitForSeconds(2);
-            Items[i].active = false;
+           
+            if(i == Items.Length-1)
+            {
+                Items[i].active = true;
+                yield return new WaitForSeconds(2);
+                Items[i].active = false;
+                yield return new WaitForSeconds(1);
+                SceneManager.LoadScene("sampah1");
+            }
+            else
+            {
+                Items[i].active = true;
+                yield return new WaitForSeconds(2);
+                Items[i].active = false;
+            }
         }
 
         //Print the time of when the function is first called.

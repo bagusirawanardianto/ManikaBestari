@@ -41,4 +41,37 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Resolution.unity
     guid: b0add8a63ee162741a26977ad90d9e9b
+  - enabled: 1
+    path: Assets/Scenes/Chapter_4.unity
+    guid: d99d4240b7d9ff84fb2c6f4e9219ae45
+  - enabled: 1
+    path: Assets/Scenes/Controller.unity
+    guid: 9ecfe76add3476849bab5ad661717faf
+  - enabled: 1
+    path: Assets/Scenes/GameControll.unity
+    guid: bc4aa0036f62f53458f3e8a556efa8d9
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 08ccbf5fdd8efad4989836ad7650e965
+  - enabled: 1
+    path: Assets/Scenes/PuzzleGame.unity
+    guid: 8288dd7bf24eb5e49957bbcfa6858965
+  - enabled: 1
+    path: Assets/Scenes/sampah1.unity
+    guid: 374eff2ce37acd1439df3959902f47fd
+  - enabled: 1
+    path: Assets/Scenes/sampah2.unity
+    guid: 31288fb68a1e6e14cb8b9fcfbdd0a22f
+  - enabled: 1
+    path: Assets/Scenes/sampah3.unity
+    guid: 7c03b61e45dd96d4cba5228f0a40bf7b
+  - enabled: 1
+    path: Assets/Scenes/ScreenSetting.unity
+    guid: 4ff5c822135f3d041b4508e762091eaf
+  - enabled: 1
+    path: Assets/Scenes/TebakGambarGame.unity
+    guid: d52fa2fca035aff4087a9af25c2141d4
+  - enabled: 1
+    path: Assets/Scenes/TebakGambarMenu.unity
+    guid: 4977f9ef8ab830f49a88d8394050a6bd
   m_configObjects: {}
