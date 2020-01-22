@@ -40,6 +40,8 @@ public class LadyController : MonoBehaviour
     public KeyCode forward { get; set; }
     public KeyCode backward { get; set; }
 
+    public GameObject[] Items;
+
     void Awake()
     {
         jump = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("jumpKey", "Space"));
@@ -165,11 +167,10 @@ public class LadyController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.transform.tag.Equals("Coin"))
+        if (collision.transform.tag.Equals("Police"))
         {
-            Coins.score += 15;
-            Destroy(collision.gameObject);
-            MPEarnCoint.Play();
+            StartCoroutine(ExampleCoroutine());
+            Debug.Log("Ketemu Polisi!");
         }
 
         if (collision.transform.tag.Equals("SpecialItem"))
@@ -221,33 +222,19 @@ public class LadyController : MonoBehaviour
         }
     }
 
-    public void nextProlog()
+    IEnumerator ExampleCoroutine()
     {
-        countProlog--;
+        for(int i = 0; i < Items.Length; i++){
+            Items[i].active = true;
+            yield return new WaitForSeconds(2);
+            Items[i].active = false;
+        }
 
-        if(countProlog == 4)
-        {
-            p1.SetActive(false);
-        }
-        else if(countProlog == 3)
-        {
-            p2.SetActive(false);
-        }
-        else if (countProlog == 2)
-        {
-            p3.SetActive(false);
-        }
-        else if (countProlog == 1)
-        {
-            p4.SetActive(false);
-        }
-        else if (countProlog == 0)
-        {
-            p5.SetActive(false);
-            b1.SetActive(false);
+        //Print the time of when the function is first called.
+        //Debug.Log("Started Coroutine at timestamp : " + Time.time);
 
-            isProlog = true;
-        }
+        //After we have waited 5 seconds print the time again.
+        //Debug.Log("Finished Coroutine at timestamp : " + Time.time);
     }
 
 }

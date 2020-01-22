@@ -10,6 +10,7 @@ TagManager:
   - SpecialItem
   - Boss
   - Bullet
+  - Police
   layers:
   - Default
   - TransparentFX
