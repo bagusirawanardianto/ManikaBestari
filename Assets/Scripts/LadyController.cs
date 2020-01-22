@@ -9,12 +9,9 @@ public class LadyController : MonoBehaviour
     bool isJump = true;
     bool isDead = false;
     bool isSuperJump = false;
-    bool isProlog = false;
 
     int idMove = 0;
     int superJump = 0;
-
-    int countProlog = 5;
 
     Animator anim;
 
