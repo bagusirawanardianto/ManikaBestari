@@ -43,7 +43,7 @@ public class gameplay : MonoBehaviour {
 			input_jawaban.text = "";
 		} else {
 			selesai.SetActive (true);
-			transform.GetChild(transform.childCount-1).gameObject.SetActive (false);
+			//transform.GetChild(transform.childCount-1).gameObject.SetActive (false);
 		}
 	}
 	
