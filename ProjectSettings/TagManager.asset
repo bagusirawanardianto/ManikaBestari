@@ -11,6 +11,8 @@ TagManager:
   - Boss
   - Bullet
   - Police
+  - NonOrganik
+  - organik
   layers:
   - Default
   - TransparentFX
