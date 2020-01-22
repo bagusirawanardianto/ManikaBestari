@@ -44,4 +44,9 @@ public class PindahScene2 : MonoBehaviour
     {
         SceneManager.LoadScene("Chapter_1");
     }
+
+        public void KembaliKeMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 }

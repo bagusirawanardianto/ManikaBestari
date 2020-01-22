@@ -51,4 +51,14 @@ public class PindahScene : MonoBehaviour
     {
         SceneManager.LoadScene("Unlock Chapter");
     }
+
+    public void KembaliKeMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
+     public void ResolutionSetting()
+    {
+        SceneManager.LoadScene("Resolution");
+    }
 }
