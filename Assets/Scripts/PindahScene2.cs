@@ -49,4 +49,9 @@ public class PindahScene2 : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
+
+       public void ControllerSetting()
+    {
+        SceneManager.LoadScene("Controller");
+    }
 }

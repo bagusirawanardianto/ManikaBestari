@@ -8,14 +8,14 @@ using UnityEngine.SceneManagement;
 public class SettingAudioScreen : MonoBehaviour
 {
     public AudioMixer audioMixer;
-    public Slider musicSlider;
+    // public Slider musicSlider;
 
     // Start is called before the first frame update
     void Start()
     {
-        SetVolume(PlayerPrefs.GetFloat("musicVolume", 0));
+        // SetVolume(PlayerPrefs.GetFloat("musicVolume", 0));
 
-        musicSlider.value = PlayerPrefs.GetFloat("musicVolume", 0);
+        // musicSlider.value = PlayerPrefs.GetFloat("musicVolume", 0);
     }
 
     // Update is called once per frame
@@ -28,8 +28,8 @@ public class SettingAudioScreen : MonoBehaviour
     {
         audioMixer.SetFloat("volume", volume);
 
-        PlayerPrefs.SetFloat("musicVolume", volume);
-        PlayerPrefs.Save();
+        // PlayerPrefs.SetFloat("musicVolume", volume);
+        // PlayerPrefs.Save();
     }
 
     public void Mute()
