@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PuzzleGame : MonoBehaviour
 {
@@ -11,7 +12,8 @@ public class PuzzleGame : MonoBehaviour
     public Text time;
     public bool gameOver = false, menang = false;
 
-    public GameObject sedih;
+    public GameObject panelMenang, panelKalah;
+    public string next;
 
     // Start is called before the first frame update
     void Start()
@@ -45,13 +47,24 @@ public class PuzzleGame : MonoBehaviour
         if (menang)
         {
             //time.text = "Congratulations";
+            panelMenang.SetActive(true);
             timer = 0;
+            next = "EndVideo";
+            StartCoroutine(ExampleCoroutine());
         }
 
         if (gameOver){
-            sedih.SetActive(true);
+            panelKalah.SetActive(true);
             time.text = "GameOver";
             timer = 0;
+            next = "Chapter_3";
+            StartCoroutine(ExampleCoroutine());
         }
+    }
+
+    IEnumerator ExampleCoroutine()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(next);
     }
 }
