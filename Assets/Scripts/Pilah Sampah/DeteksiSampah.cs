@@ -13,6 +13,7 @@ public class DeteksiSampah : MonoBehaviour
     private AudioSource MediaPlayerBenar;
     private AudioSource MediaPlayerSalah;
     public Text textScore;
+    public GameObject winPanel, munculSampah, akhir;
 
     void Start()
     {
@@ -31,7 +32,10 @@ public class DeteksiSampah : MonoBehaviour
         if(Data.score == 100)
         {
             //menang
-            StartCoroutine(ExampleCoroutine());
+            winPanel.active = true;
+            Destroy(munculSampah);
+            Destroy(akhir);
+            //StartCoroutine(ExampleCoroutine());
         }
     }
 

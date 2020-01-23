@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PindahScene2 : MonoBehaviour
 {
     public bool isEscapeToExit;
+    public string nextScene;
 
     // Start is called before the first frame update
     void Start()
@@ -53,5 +54,10 @@ public class PindahScene2 : MonoBehaviour
        public void ControllerSetting()
     {
         SceneManager.LoadScene("Controller");
+    }
+
+    public void Next()
+    {
+        SceneManager.LoadScene(nextScene);
     }
 }

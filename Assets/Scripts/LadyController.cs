@@ -239,12 +239,6 @@ public class LadyController : MonoBehaviour
                 Items[i].active = false;
             }
         }
-
-        //Print the time of when the function is first called.
-        //Debug.Log("Started Coroutine at timestamp : " + Time.time);
-
-        //After we have waited 5 seconds print the time again.
-        //Debug.Log("Finished Coroutine at timestamp : " + Time.time);
     }
 
 }

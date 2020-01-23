@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MunculkanSampah : MonoBehaviour
 {
-    public float jeda = 2f;
+    public static float jeda = 2f;
     float timer;
     public GameObject[] objectSampah;
     // Start is called before the first frame update
