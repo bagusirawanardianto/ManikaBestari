@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DeteksiSampah : MonoBehaviour
 {
@@ -27,7 +28,11 @@ public class DeteksiSampah : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Data.score == 100)
+        {
+            //menang
+            StartCoroutine(ExampleCoroutine());
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -48,4 +53,12 @@ public class DeteksiSampah : MonoBehaviour
         }
     }
 
-}
+        IEnumerator ExampleCoroutine()
+        {
+
+            yield return new WaitForSeconds(3);
+
+            SceneManager.LoadScene("sampah2");
+        
+        }
+   }

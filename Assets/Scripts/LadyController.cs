@@ -38,6 +38,7 @@ public class LadyController : MonoBehaviour
     public KeyCode backward { get; set; }
 
     public GameObject[] Items;
+    public string nextScene;
 
     void Awake()
     {
@@ -229,7 +230,7 @@ public class LadyController : MonoBehaviour
                 yield return new WaitForSeconds(2);
                 Items[i].active = false;
                 yield return new WaitForSeconds(1);
-                SceneManager.LoadScene("sampah1");
+                SceneManager.LoadScene(nextScene);
             }
             else
             {
