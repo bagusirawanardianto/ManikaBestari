@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class gameplay : MonoBehaviour {
 	//public string[] soal;
@@ -11,13 +12,14 @@ public class gameplay : MonoBehaviour {
 	public InputField input_jawaban;
     public Sprite[] soal;
 
-    public GameObject text_soal, feed_benar, feed_salah, selesai;
+    public GameObject text_soal, feed_benar, feed_salah, selesai, kalah;
 
 	int nomor_soal = -1, skor = 0;
 
 	// Use this for initialization
 	void Start () {
 		buka_soal ();
+        
     }
 
 	void buka_soal(){
@@ -42,13 +44,35 @@ public class gameplay : MonoBehaviour {
 			buka_soal ();
 			input_jawaban.text = "";
 		} else {
-			selesai.SetActive (true);
-			//transform.GetChild(transform.childCount-1).gameObject.SetActive (false);
-		}
+            if (nomor_soal == soal.Length - 1)
+            {
+                if (skor < 80)
+                {
+                    kalah.SetActive(true);
+                    StartCoroutine(ExampleCoroutine());
+                }
+                else
+                {
+                    selesai.SetActive(true);
+                }
+
+            }
+
+            //transform.GetChild(transform.childCount-1).gameObject.SetActive (false);
+        }
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		text_skor.text = skor.ToString ();
+      
 	}
+
+    IEnumerator ExampleCoroutine()
+    {
+
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("TebakGambarGame");
+
+    }
 }
