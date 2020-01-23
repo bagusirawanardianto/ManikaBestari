@@ -54,6 +54,8 @@ public class gameplay : MonoBehaviour {
                 else
                 {
                     selesai.SetActive(true);
+                    PlayerPrefs.SetString("secondLvl", "true");
+                    PlayerPrefs.Save();
                 }
 
             }

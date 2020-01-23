@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PindahScene : MonoBehaviour
 {
     public bool isEscapeToExit;
+    public string cond;
 
     AudioSource audioData;
     // Start is called before the first frame update
@@ -14,6 +15,8 @@ public class PindahScene : MonoBehaviour
         audioData = GetComponent<AudioSource>();
         audioData.Play(0);
         audioData.loop = true;
+
+        cond = PlayerPrefs.GetString("isPlayed", "false");
     }
 
     // Update is called once per frame
@@ -34,7 +37,16 @@ public class PindahScene : MonoBehaviour
 
     public void MulaiPermainan()
     {
-        SceneManager.LoadScene("Intro");
+
+        if (cond.Equals("false"))
+        {
+            SceneManager.LoadScene("Intro");
+        }
+        else
+        {
+            SceneManager.LoadScene("Unlock Chapter");
+        }
+        
     }
 
     public void SettingPermainan()

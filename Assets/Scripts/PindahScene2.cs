@@ -56,6 +56,16 @@ public class PindahScene2 : MonoBehaviour
         SceneManager.LoadScene("Controller");
     }
 
+    public void cp2()
+    {
+        SceneManager.LoadScene("Chapter_2");
+    }
+
+    public void cp3()
+    {
+        SceneManager.LoadScene("Chapter_3");
+    }
+
     public void Next()
     {
         SceneManager.LoadScene(nextScene);

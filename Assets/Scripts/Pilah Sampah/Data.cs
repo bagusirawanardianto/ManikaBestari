@@ -6,7 +6,6 @@ public class Data : MonoBehaviour
 {
     // Start is called before the first frame update
     public static int score;
-    public static bool isFirstPlayed = true;
 
     void Start()
     {

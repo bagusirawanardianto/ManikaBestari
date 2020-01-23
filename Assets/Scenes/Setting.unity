@@ -1169,6 +1169,7 @@ GameObject:
   - component: {fileID: 1419815702}
   - component: {fileID: 1419815703}
   - component: {fileID: 1419815704}
+  - component: {fileID: 1419815705}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1254,6 +1255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEscapeToExit: 0
+  nextScene: 
 --- !u!114 &1419815703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1267,6 +1269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEscapeToExit: 0
+  cond: 
 --- !u!82 &1419815704
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1363,6 +1366,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1419815705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419815698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64598dde192186d49812b47d6ca6fe09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEscapeToExit: 0
+  cond: 
 --- !u!1 &1436261994
 GameObject:
   m_ObjectHideFlags: 0
@@ -1598,7 +1615,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1419815703}
         m_MethodName: MulaiPermainan
         m_Mode: 1
         m_Arguments:

@@ -51,6 +51,8 @@ public class PuzzleGame : MonoBehaviour
             timer = 0;
             next = "EndVideo";
             StartCoroutine(ExampleCoroutine());
+            PlayerPrefs.SetString("thirdLvl", "true");
+            PlayerPrefs.Save();
         }
 
         if (gameOver){

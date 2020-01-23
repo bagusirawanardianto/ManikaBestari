@@ -1199,9 +1199,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 147288541
-  m_SortingLayer: 5
-  m_SortingOrder: 0
+  m_SortingLayerID: -42796079
+  m_SortingLayer: 6
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 18306be62ef7b3043afca2d7f6cc890e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1242,6 +1242,7 @@ MonoBehaviour:
   nameTag: organik
   audioBenar: {fileID: 8300000, guid: a9cc49b30869d8242aa759941cf8e9a5, type: 3}
   audioSalah: {fileID: 8300000, guid: 733732a1350abcd4d807cffe5e007938, type: 3}
+  music: {fileID: 8300000, guid: ed2f8e1831780eb4998a41d86315c7c2, type: 3}
   textScore: {fileID: 97217752}
   winPanel: {fileID: 1591575095}
   munculSampah: {fileID: 1136947026}
@@ -1326,9 +1327,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 147288541
-  m_SortingLayer: 5
-  m_SortingOrder: 7
+  m_SortingLayerID: -42796079
+  m_SortingLayer: 6
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: e09936a6b0aea414a8e09bb0f57e81b3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1369,6 +1370,7 @@ MonoBehaviour:
   nameTag: NonOrganik
   audioBenar: {fileID: 8300000, guid: a9cc49b30869d8242aa759941cf8e9a5, type: 3}
   audioSalah: {fileID: 8300000, guid: 733732a1350abcd4d807cffe5e007938, type: 3}
+  music: {fileID: 8300000, guid: ed2f8e1831780eb4998a41d86315c7c2, type: 3}
   textScore: {fileID: 97217752}
   winPanel: {fileID: 1591575095}
   munculSampah: {fileID: 1136947026}

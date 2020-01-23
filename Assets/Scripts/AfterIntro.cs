@@ -9,6 +9,10 @@ public class AfterIntro : MonoBehaviour
     void Start()
     {
         StartCoroutine(ExampleCoroutine());
+
+        PlayerPrefs.SetString("isPlayed", "true");
+        PlayerPrefs.SetString("firstLvl", "true");
+        PlayerPrefs.Save();
     }
 
     // Update is called once per frame

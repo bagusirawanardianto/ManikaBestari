@@ -10,8 +10,9 @@ public class DeteksiSampah : MonoBehaviour
     public string nameTag;
     public AudioClip audioBenar;
     public AudioClip audioSalah;
+    public AudioClip music;
     private AudioSource MediaPlayerBenar;
-    private AudioSource MediaPlayerSalah;
+    private AudioSource MediaPlayerSalah, musicMP;
     public Text textScore;
     public GameObject winPanel, munculSampah, akhir;
 
@@ -24,6 +25,10 @@ public class DeteksiSampah : MonoBehaviour
         MediaPlayerSalah = gameObject.AddComponent<AudioSource>();
         MediaPlayerSalah.clip = audioSalah;
 
+        musicMP = gameObject.AddComponent<AudioSource>();
+        musicMP.clip = music;
+        musicMP.Play();
+
     }
 
     // Update is called once per frame
@@ -35,6 +40,8 @@ public class DeteksiSampah : MonoBehaviour
             winPanel.active = true;
             Destroy(munculSampah);
             Destroy(akhir);
+            PlayerPrefs.SetString("secondLvl", "true");
+            PlayerPrefs.Save();
             //StartCoroutine(ExampleCoroutine());
         }
     }
